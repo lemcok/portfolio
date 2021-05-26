@@ -12,7 +12,7 @@ export default function Home() {
       <main className={styles.main}>
           <section className={`${styles.container_profile} ${styles.glass} ${styles.mb_5}`}>
             <div className={styles.photo}>
-              <img src="/assets/imgs/avatar.jpg" alt="" className={ `${styles.img__avatar}` }/>
+              <img src="/assets/imgs/photo.png" alt="" className={ `${styles.img__avatar}` }/>
               <h2>Ricardo Flores</h2>
             </div>
             <ul className={styles.links}>
@@ -24,7 +24,7 @@ export default function Home() {
               </li>
               <li className={styles.link}><a href="https://github.com/lemcok" target="_blank" rel="noopener noreferrer"><img src="/assets/imgs/github.svg" alt=""/>lemcok</a></li>
               <li className={styles.link}><a href="https://www.linkedin.com/in/ricardo-flores-morales/" target="_blank" rel="noopener noreferrer"><img src="/assets/imgs/linkedin.svg" alt=""/>Linkedin</a></li>
-              <li className={styles.link}><a href="" style={{'text-decoration': 'underline', 'color': 'blue'}}><img src="/assets/imgs/cv.svg" alt=""/>CV</a></li>
+              <li className={styles.link}><a href="" style={{'textDecoration': 'underline', 'color': 'blue'}}><img src="/assets/imgs/cv.svg" alt=""/>CV</a></li>
             </ul>
           </section>
 
