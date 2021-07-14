@@ -43,6 +43,20 @@ export default function Home() {
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
+            <div className={ `${styles.card} ${styles.glass}`}>
+              <img src="/assets/imgs/task-app.png" alt="" className={styles.card_img}/>
+              <div className={styles.card_body}>
+                <h2>Task-App</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div className={ `${styles.card} ${styles.glass}`}>
+              <img src="/assets/imgs/task-app.png" alt="" className={styles.card_img}/>
+              <div className={styles.card_body}>
+                <h2>Task-App</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
           </section>
       </main>
 
