@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { CardList } from '../components/card/CardList'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -14,12 +15,13 @@ export default function Home() {
             <div className={styles.photo}>
               <img src="/assets/imgs/photo.png" alt="" className={ `${styles.img__avatar}` }/>
               <h2>Ricardo Flores</h2>
+              <p>Frontend Developer</p>
             </div>
             <ul className={styles.links}>
               <li className={styles.link}>
                 <a href="https://twitter.com/Ricardo9Fm" target="_blank" rel="noopener noreferrer">
                   <img className={styles.redes} src="/assets/imgs/twitter.svg" alt=""/>
-                  @Ricardo9Fm
+                  Ricardo9fm
                 </a>
               </li>
               <li className={styles.link}><a href="https://github.com/lemcok" target="_blank" rel="noopener noreferrer"><img src="/assets/imgs/github.svg" alt=""/>lemcok</a></li>
@@ -28,35 +30,22 @@ export default function Home() {
             </ul>
           </section>
 
-          <section className={`${styles.glass} ${styles.container_cards}`}>
-            <div className={ `${styles.card} ${styles.glass}`}>
-              <img src="/assets/imgs/task-app.png" alt="" className={styles.card_img}/>
-              <div className={styles.card_body}>
-                <h2>Task-App</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
+          <section className={`${styles.glass} ${styles.container_articles}`}>
+
+            <div className={styles.categories}>
+              <button className={ `${styles.glass} ${styles.btn}` }>
+                projects
+              </button>
+              <button className={ `${styles.glass} ${styles.btn}` }>
+                projects
+              </button>
+              <button className={ `${styles.glass} ${styles.btn}` }>
+                projects
+              </button>
             </div>
-            <div className={ `${styles.card} ${styles.glass}`}>
-              <img src="/assets/imgs/task-app.png" alt="" className={styles.card_img}/>
-              <div className={styles.card_body}>
-                <h2>Task-App</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-            <div className={ `${styles.card} ${styles.glass}`}>
-              <img src="/assets/imgs/task-app.png" alt="" className={styles.card_img}/>
-              <div className={styles.card_body}>
-                <h2>Task-App</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-            <div className={ `${styles.card} ${styles.glass}`}>
-              <img src="/assets/imgs/task-app.png" alt="" className={styles.card_img}/>
-              <div className={styles.card_body}>
-                <h2>Task-App</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
+
+            <CardList />
+            
           </section>
       </main>
 
