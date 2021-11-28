@@ -82,13 +82,13 @@
   
 }
 .container__cards {
-  /* display: flex; */
-  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .card {
   width: 100%;
-  /* max-width: 370px;
-  min-width: 250px; */
+  max-width: 370px;
+  min-width: 250px;
   height: auto;
   border-radius: 1rem;
   overflow: hidden;

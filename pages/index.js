@@ -11,6 +11,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+
           <section className={`${styles.container_profile} ${styles.glass} ${styles.mb_5}`}>
             <div className={styles.photo}>
               <img src="/assets/imgs/photo.png" alt="" className={ `${styles.img__avatar}` }/>
@@ -31,21 +32,13 @@ export default function Home() {
           </section>
 
           <section className={`${styles.glass} ${styles.container_articles}`}>
-
             <div className={styles.categories}>
-              <button className={ `${styles.glass} ${styles.btn}` }>
-                projects
-              </button>
-              <button className={ `${styles.glass} ${styles.btn}` }>
-                projects
-              </button>
               <button className={ `${styles.glass} ${styles.btn}` }>
                 projects
               </button>
             </div>
 
             <CardList />
-            
           </section>
       </main>
 
